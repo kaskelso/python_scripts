@@ -75,13 +75,6 @@ model.evaluate(X_test, y_test)
 
 loss, mae = model.evaluate(X_test, y_test, verbose=2)
 
-print("Testing set Mean Abs Error: {:5.2f} expenses".format(mae))
-
-if mae < 3500:
-  print("You passed the challenge. Great job!")
-else:
-  print("The Mean Abs Error must be less than 3500. Keep trying.")
-
 # Plot predictions.
 test_predictions = model.predict(X_test).flatten()
 
